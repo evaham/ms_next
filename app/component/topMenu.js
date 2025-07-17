@@ -59,7 +59,7 @@ export default function TopMenu() {
                     </div>
                 </div>
                 <div>
-                    <Image src="/img/4.png" alt="" width={1300} height={100} />
+                    <Image src="ms/img/4.png" alt="" width={1300} height={100} />
                 </div>
 
             </div>

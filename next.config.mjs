@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
-
-const isGithubPages = process.env.GITHUB_ACTIONS === 'true';
+const isGithubPages = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    output: 'export', // 반드시 static export 설정
-    basePath: isGithubPages ? '/ms_next' : '',
-    assetPrefix: isGithubPages ? '/ms_next/' : '',
-    images: {
-      unoptimized: true, // next/image 최적화 비활성화 (필수!)
-    }
+  output: 'export', // static HTML export
+  basePath: isGithubPages ? '/ms_next' : '',
+  assetPrefix: isGithubPages ? '/ms_next/' : '',
+  images: {
+    unoptimized: true, // 이미지 최적화 기능 끄기 (next export 호환)
+  },
 };
 
 export default nextConfig;

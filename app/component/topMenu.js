@@ -59,7 +59,7 @@ export default function TopMenu(props) {
                     </div>
                 </div>
                 <div>
-                    <Image src="./ms_next/img/4.png" alt="" width={1300} height={100} />
+                    <Image src="./img/4.png" alt="" width={1300} height={100} />
                 </div>
 
             </div>
@@ -122,7 +122,7 @@ export default function TopMenu(props) {
 
                 .tabside__btn:hover { text-decoration: none; background: #dfdfdf; }
 
-                .tabside__btn.bg_dark {  background: #333; color: #fff; border: 0; }
+                .tabside__btn.bg_dark {  background: #475569; color: #fff; border-color:transparent; }
 
             `}</style>
 

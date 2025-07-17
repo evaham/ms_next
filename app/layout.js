@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="antialiased">
         <TopMenu />
-        {children}
+        {/* {children} */}
       </body>
     </html>
   );

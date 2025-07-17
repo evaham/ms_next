@@ -22,7 +22,7 @@ const menuList2 = [
     { id:7, className:"bg-red-700/75 text-white font-bold pt-2 rounded-t-sm", icon: false, title: "공동구매", href: "" },
     { id:8, className:"bg-red-700/75 text-white font-bold pt-2 rounded-t-sm", icon: false, title: "이미지클라우드", href: "" },
 ];
-export default function TopMenu() {
+export default function TopMenu(props) {
 
   const [activeMenu, setActiveMenu] = useState(1);
 
@@ -59,7 +59,7 @@ export default function TopMenu() {
                     </div>
                 </div>
                 <div>
-                    <Image src="/ms_next/img/4.png" alt="" width={1300} height={100} />
+                    <Image src="./ms_next/img/4.png" alt="" width={1300} height={100} />
                 </div>
 
             </div>
@@ -122,7 +122,7 @@ export default function TopMenu() {
 
                 .tabside__btn:hover { text-decoration: none; background: #dfdfdf; }
 
-                .tabside__btn.bg_dark {  background: #333; color: #fff; }
+                .tabside__btn.bg_dark {  background: #333; color: #fff; border: 0; }
 
             `}</style>
 
